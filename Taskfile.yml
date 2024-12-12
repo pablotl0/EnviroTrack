@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  check:
+    cmds:
+      - "gofmt -e ./internal/.."
+
+  test:
+    cmds:
+      - "go test ./... -v"
